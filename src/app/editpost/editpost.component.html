@@ -1,0 +1,19 @@
+<form >
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input [(ngModel)] = "currentPost.title" type="text" name="title" value="{{currentPost.title}}" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input [(ngModel)] = "currentPost.description" type="text" name="description" value="{{currentPost.description}}" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="cost">Cost</label>
+    <input [(ngModel)] = "currentPost.cost" type="number" name="cost" value="{{currentPost.cost}}" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="zipcode">Zipcode</label>
+    <input [(ngModel)] = "currentPost.zipcode" type="text" name="zipcode" value="{{currentPost.zipcode}}" class="form-control">
+  </div>
+  <button type="button" (click)="doneEditing()" class="btn btn-primary">Done</button>
+</form>
