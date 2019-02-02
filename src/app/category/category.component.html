@@ -1,7 +1,13 @@
 <h2>Categories</h2>
 <ul>
-  <li *ngFor="let category of categories" (click)="showCategory(category)">{{ category }}</li>
+    <li *ngFor="let category of categories" (click)="showCategory(category)">{{ category }}</li>
 </ul>
+
+<div *ngFor="let i of item | async" class="panel panel-default">
+    <div class="panel-body">
+        <h3><em>{{i.title}}</em> by {{i.description}}</h3>
+    </div>
+</div>
 
 
 <!-- <ul>
